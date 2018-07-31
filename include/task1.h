@@ -1,8 +1,5 @@
 #pragma once
-#include <algorithm>
-#include <cstddef>
-#include <iterator>
-#include <memory>
+#include <cstring>
 
 template<typename T>
 bool compare(const T a, const T b)
