@@ -24,13 +24,13 @@ set(SRC_FILES3 ${PROJECT_SOURCE_DIR}/src/main3.cpp)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_library(task1_lib ${SRC_FILES1})
-add_library(task2_lib ${SRC_FILES2})
-add_library(task3_lib ${SRC_FILES3})
+#add_library(task1_lib ${SRC_FILES1})
+#add_library(task2_lib ${SRC_FILES2})
+#add_library(task3_lib ${SRC_FILES3})
 
-add_executable(task1)
-add_executable(task2)
-add_executable(task3)
+add_executable(task1 ${SRC_FILES1})
+add_executable(task2 ${SRC_FILES2})
+add_executable(task3 ${SRC_FILES3})
 
 #target_link_libraries(task1 task1_lib)
 #target_link_libraries(task2 task2_lib)
@@ -79,4 +79,3 @@ if (BUILD_TESTS)
   endif() #CMAKE_BUILD_TYPE STREQUAL "Coverage"
 
 endif()
-                                                                  OC
