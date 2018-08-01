@@ -11,13 +11,19 @@ bool compare(const T a, const T b)
 template<>
 bool compare<const char*>(const char * a, const char * b)
 {
-	return strcmp(a, b) < 0;
+	if (strlen(a) == strlen(b))
+		return strcmp(a, b) < 0;
+	else
+		return  strlen(a) < strlen(b);
 }
 
 template<>
 bool compare<char*>(char * a, char * b)
 {
-	return strcmp(a, b) < 0;
+	if (strlen(a) == strlen(b))
+		return strcmp(a, b) < 0;
+	else
+		return  strlen(a) < strlen(b);
 }
 
 
