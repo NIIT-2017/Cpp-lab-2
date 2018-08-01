@@ -14,6 +14,12 @@ bool compare<const char*>(const char * a, const char * b)
 	return strcmp(a, b) < 0;
 }
 
+template<>
+bool compare<char*>(char * a, char * b)
+{
+	return strcmp(a, b) < 0;
+}
+
 
 
 /*template<typename T>
