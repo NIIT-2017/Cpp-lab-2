@@ -1,14 +1,14 @@
 #pragma once
 
 template<class T>
-T gen()
+T myGen()
 {
 	static int t = 48;
 	return t++;
 }
 
 template<>
-char* gen()
+char* myGen()
 {
 	static unsigned t = 0;
 	t++;
