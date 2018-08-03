@@ -1,6 +1,6 @@
 //#include <algorithm> //merge
 using namespace std;
-
+#include <cstring>
 bool usravn(char* a, char* b)
 {
 	return strlen(a) < strlen(b);
