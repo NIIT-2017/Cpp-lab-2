@@ -1,4 +1,5 @@
 //#include <algorithm> //merge
+#include <cstring>
 using namespace std;
 template <typename T> void msort(T * a, size_t n)
 {
