@@ -2,7 +2,7 @@
 #include <cstring>
 #include <cstdlib>
 
-template<class T> 
+/*template<class T> 
 T change(T a)
 {
 	a = (T)(rand());
@@ -14,7 +14,7 @@ template<> char* change(char* str)
 	for (size_t i = 0; i < n; i++)
 		str[i] = (char)(rand());
 	return str;
-}
+}*/
 template<class T, size_t n>
 
 void map(T*a, T(*change)(T))

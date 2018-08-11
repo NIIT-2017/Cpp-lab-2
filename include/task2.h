@@ -1,6 +1,7 @@
 #pragma once
+#include <cstring>
 #include <iostream>
-template<typename T>
+/*template<typename T>
 T gen()
 {
 	T t = (T)(rand());
@@ -15,7 +16,7 @@ char* gen()
 		 s[i] = (char)(rand());
 	s[t] = '\0';
 	return s;
-}
+}*/
 template<typename T, size_t N>
 T* createArr(T(*gen)())
 {
