@@ -44,7 +44,7 @@ void merge(type &arr1, type &arr2, int size, int fc)
 		{
 			if (p3 > size - 1) break;
 
-			if (value(arr1[p1]) <= value(arr1[p2]) && p1 <= max1 && p2 <= max2)
+			if (value(arr1[p1]) < value(arr1[p2]) && p1 <= max1 && p2 <= max2)
 			{
 				arr2[p3] = arr1[p1];
 				p1++;
@@ -52,7 +52,15 @@ void merge(type &arr1, type &arr2, int size, int fc)
 				continue;
 			}
 
-			if (value(arr1[p1]) >= value(arr1[p2]) && p1 <= max1 && p2 <= max2)
+			if (value(arr1[p1]) > value(arr1[p2]) && p1 <= max1 && p2 <= max2)
+			{
+				arr2[p3] = arr1[p2];
+				p2++;
+				p3++;
+				continue;
+			}
+
+			if (value(arr1[p1]) == value(arr1[p2]) && p1 <= max1 && p2 <= max2)
 			{
 				arr2[p3] = arr1[p2];
 				p2++;
