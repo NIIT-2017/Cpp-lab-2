@@ -1,5 +1,6 @@
 #include <iostream>
 #include "task2.h"
+#include "task.h"
 using namespace std;
 int main()
 {
@@ -13,12 +14,16 @@ int main()
 	{
 		cout << arr1[i] << endl;
 	}
+
+	cout << endl;
 		
 	arr2 = createArr<char, n>(gen);
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr2[i] << endl;
 	}
+
+	cout << endl;
 
 	arr3 = createArr<char*, n>(gen);
 	for (int i = 0; i < n; i++)

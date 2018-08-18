@@ -1,4 +1,5 @@
 #include "task3.h"
+#include "task.h"
 #include <iostream>
 #include <cstring>
 

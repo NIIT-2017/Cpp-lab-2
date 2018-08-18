@@ -13,26 +13,5 @@ type* createArr(type(*gen)())
 	return arr;
 }
 
-template<typename type>
-type gen()
-{
-	type result = (type)(rand());
-	return result;
-}
 
-
-template<>
-char* gen()
-{
-	int nm = rand() % 8;
-	char *arr = new char[nm];
-
-	for (size_t i = 0; i < nm; i++)
-	{
-		arr[i] = (char)(rand());
-	}
-		
-	arr[nm] = '\0';
-	return arr;
-}
 
