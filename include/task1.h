@@ -2,6 +2,19 @@
 #include <cstring>
 
 template<typename type>
+type value(type &a)
+{
+	type result = a;
+	return result;
+}
+
+int value(char* a)
+{
+	int result = strlen(a);
+	return result;
+}
+
+template<typename type>
 void copy(type &arr1, type &arr2, int size)
 {
 	for (int i = 0; i < size; i++)
@@ -64,19 +77,6 @@ void merge(type &arr1, type &arr2, int size, int fc)
 			}
 		}
 	}
-}
-
-template<typename type>
-type value(type &a)
-{
-	type result = a;
-	return result;
-}
-
-int value(char* a)
-{
-	int result = strlen(a);
-	return result;
 }
 
 template<typename type>
