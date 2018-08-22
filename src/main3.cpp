@@ -16,7 +16,7 @@ int main()
 	map <double, n> (arr2, change);
 	print(arr2, n);
 
-	char arr3[n]{'aaa', 'qwerty', 'zxcvggg', '4d1', '9', 'z'};
+	char arr3[n]{'a', 'q', 'z', 'd', 't', 'u'};
 	print(arr3, n);
 	map <char, n> (arr3, change);
 	print(arr3, n);
