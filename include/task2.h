@@ -3,6 +3,7 @@
 using namespace std;
 template<class T>
 T myGen()
+
 {
     static int t = 48;
     return t++;
