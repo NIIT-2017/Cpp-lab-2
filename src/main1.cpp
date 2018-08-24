@@ -22,5 +22,4 @@ int main()
 		cout << arr1[i] << " ";
 	cout << endl;
     return 0;
-
 }

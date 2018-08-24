@@ -15,6 +15,5 @@ int main()
 		cout << arr2[i] << " ";
 	cout << endl;
     return 0;
-	
 }
 
