@@ -3,8 +3,8 @@
 #include <iostream>
 #include <cstddef>
 #include <cstring>
-#include <iostream>
 #include <map>
+
 
 using namespace std;
 
@@ -92,7 +92,7 @@ void msort(T1 * arr, size_t n)
 template<class T1>
 void cout_type_arr(T1 * arr, size_t n)
 {
-	for (size_t i = 0; i < n; i++)
+	/*for (size_t i = 0; i < n; i++)
 		cout << arr[i] << endl;
-	cout << endl;
+	cout << endl;*/
 }
