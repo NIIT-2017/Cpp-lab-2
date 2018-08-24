@@ -5,15 +5,15 @@ int main()
 {
 	const size_t n = 5;
 	int arr[n]{ 1, 2, 3, 4, 5};
-	map<int, n>(arr,change);
+	map<int, n>(arr,change1);
 	cout_type_arr_task3(arr, n);
 
 	double arr1[n]{ 1, 2.2, 3.3, 4.4, 5 };
-	map<double, n>(arr1, change);
+	map<double, n>(arr1, change1);
 	cout_type_arr_task3(arr1, n);
 
 	char arr2[n]{ '1', '2', '3', '4', '5' };
-	map<char, n>(arr2, change);
+	map<char, n>(arr2, change1);
 	cout_type_arr_task3(arr2, n);
 
 	char* arr3[n];
@@ -26,7 +26,7 @@ int main()
 		}
 		arr3[i][i + 1] = '\0';
 	}
-	map<char*, n>(arr3, change);
+	map<char*, n>(arr3, change1);
 	cout_type_arr_task3(arr3, n);
 
 	return 0;

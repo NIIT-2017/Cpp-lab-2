@@ -16,14 +16,14 @@ T* createArr(T(*gen)())
 }
 
 template<class T>
-T gen()
+T gen1()
 {
 	static int t = 48;
 	return t++;
 }
 
 template<>
-char* gen()
+char* gen1()
 {
 	static unsigned t = 0;
 	t++;

@@ -13,13 +13,13 @@ void map(T1 * arr, T1 (*change)(T1))
 }
 
 template<class T>
-T change(T val)
+T change1(T val)
 {
 	return val + 1;
 }
 
 template<>
-char* change(char* val)
+char* change1(char* val)
 {
 	size_t n = strlen(val);
 	for (size_t i = 0; i < n; i++)
