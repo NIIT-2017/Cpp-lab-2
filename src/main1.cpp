@@ -8,7 +8,7 @@ int main()
 {
 	char* arr1[]{ (char*)"ffffff",(char*)"aa",(char*)"aaaa",(char*)"aaaa",(char*)"aaa" };
 	int arr2[]{ 1,9,3,2,4,5,8,7,6,0 };
-	float arr3[]{ 1.1,1.5,1.9,0.4,0.1,4.0,0.0 };
+	double arr3[]{ 1.1,1.5,1.9,0.4,0.1,4.0,0.0 };
 	msort(arr3, 7);
 	msort(arr2,10);
 	msort(arr1, 5);
