@@ -73,7 +73,7 @@ TEST(lab2,task1_3)
 	const size_t n = 6;
 	char* val[n]{(char*)"ffff", (char*)"fff2", (char*)"f", (char*)"ff", (char*)"vvv", (char*)"fffrr"};
 	lab2::msort(val, n);
-    char* expected[n]{(char*)"f", (char*)"ff", (char*)"vvv", (char*)"fff2", (char*)"ffff", (char*)"fffrr"};
+    char* expected[n]{(char*)"f", (char*)"ff", (char*)"vvv", (char*)"ffff", (char*)"fff2", (char*)"fffrr"};
     
     for(size_t i = 0; i < n; i++)
 		EXPECT_EQ(expected[i], val[i]);
