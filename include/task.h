@@ -1,4 +1,4 @@
-#include <string>
+#include <cstring>
 using namespace std;
 
 template<class T>
