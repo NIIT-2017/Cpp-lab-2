@@ -3,27 +3,16 @@
 using namespace std;
 
 template <typename T>
-void msort(T *arr, int n)
+bool Sravn(T a, T b)
 {
-
-	SortArr(arr, 0, n-1);
-
+	return a < b;
 }
 
-template <typename T>
-void SortArr(T *arr, int first, int last)
+template <>
+bool Sravn(char* a, char* b)
 {
-
-	if (first < last)
-	{
-		SortArr(arr, first, (first + last) / 2);
-		SortArr(arr, (first + last) / 2+1, last);
-		Merge(arr, first, last);
-		
-	}
-	return;
+	return strlen(a) < strlen(b);
 }
-
 
 template <typename T>
 void Merge(T *arr, int first, int last)
@@ -53,13 +42,28 @@ void Merge(T *arr, int first, int last)
 }
 
 template <typename T>
-bool Sravn(T a, T b)
+void SortArr(T *arr, int first, int last)
 {
-	return a < b;
+
+	if (first < last)
+	{
+		SortArr(arr, first, (first + last) / 2);
+		SortArr(arr, (first + last) / 2+1, last);
+		Merge(arr, first, last);
+		
+	}
+	return;
 }
 
-template <>
-bool Sravn(char* a, char* b)
+template <typename T>
+void msort(T *arr, int n)
 {
-	return strlen(a) < strlen(b);
+
+	SortArr(arr, 0, n-1);
+
 }
+
+
+
+
+
