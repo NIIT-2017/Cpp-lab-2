@@ -6,18 +6,18 @@ template <typename T>
 void msort(T *arr, int n)
 {
 
-	Sort(arr, 0, n-1);
+	SortArr(arr, 0, n-1);
 
 }
 
 template <typename T>
-void Sort(T *arr, int first, int last)
+void SortArr(T *arr, int first, int last)
 {
 
 	if (first < last)
 	{
-		Sort(arr, first, (first + last) / 2);
-		Sort(arr, (first + last) / 2+1, last);
+		SortArr(arr, first, (first + last) / 2);
+		SortArr(arr, (first + last) / 2+1, last);
 		Merge(arr, first, last);
 		
 	}
@@ -36,7 +36,7 @@ void Merge(T *arr, int first, int last)
 	for (int j = first; j <= last; j++)
 	{
 		
-		if ((start <= mid) && ((fin > last) || sravn(arr[start],arr[fin])))
+		if ((start <= mid) && ((fin > last) || Sravn(arr[start],arr[fin])))
 		{
 			mas[j] = arr[start];
 			start++;
@@ -53,13 +53,13 @@ void Merge(T *arr, int first, int last)
 }
 
 template <typename T>
-bool sravn(T a, T b)
+bool Sravn(T a, T b)
 {
 	return a < b;
 }
 
 template <>
-bool sravn(char* a, char* b)
+bool Sravn(char* a, char* b)
 {
 	return strlen(a) < strlen(b);
 }
