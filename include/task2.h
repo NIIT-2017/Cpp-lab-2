@@ -1,3 +1,6 @@
+#ifndef _TASK_H_
+#define _TASK_H_
+
 #include"task.h"
 template <typename T>
 T* createArr(const int N, T(&gen)())
@@ -8,4 +11,4 @@ T* createArr(const int N, T(&gen)())
 
 	return arr;
 }
-
+#endif
