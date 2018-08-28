@@ -1,23 +1,5 @@
 #include <iostream>
 template<typename Type>
-void msort(Type *A, int first, int last);
-template<typename Type>
-void merge(Type *A, int first, int last);
-
-template<typename Type>
-void msort(Type *A, int first, int last)
-{
-	{
-		if (first<last)
-		{
-			msort(A, first, (first + last) / 2);
-			msort(A, (first + last) / 2 + 1, last);
-			merge(A, first, last); 
-		}
-	}
-};
-
-template<typename Type>
 void merge(Type *A, int first, int last)
 {
 	int middle, start, final, j;
@@ -42,7 +24,6 @@ void merge(Type *A, int first, int last)
 	for (j = first; j <= last; j++) A[j] = mas[j];
 	delete[]mas;
 };
-
 void merge(char **A, int first, int last)
 {
 	int middle, start, final, j;
@@ -66,4 +47,17 @@ void merge(char **A, int first, int last)
 	}
 	for (j = first; j <= last; j++) A[j] = mas[j];
 	delete[]mas;
+};
+
+template<typename Type>
+void msort(Type *A, int first, int last)
+{
+	{
+		if (first<last)
+		{
+			msort(A, first, (first + last) / 2);
+			msort(A, (first + last) / 2 + 1, last);
+			merge(A, first, last);
+		}
+	}
 };
