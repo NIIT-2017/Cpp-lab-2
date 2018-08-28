@@ -1,22 +1,22 @@
 #include <iostream>
 template<typename Type>
-void MergeSort(Type *A, int first, int last);
+void msort(Type *A, int first, int last);
 
 template<typename Type>
-void MergeSort(Type *A, int first, int last)
+void msort(Type *A, int first, int last)
 {
 	{
 		if (first<last)
 		{
-			MergeSort(A, first, (first + last) / 2);
-			MergeSort(A, (first + last) / 2 + 1, last);
-			Merge(A, first, last); 
+			msort(A, first, (first + last) / 2);
+			msort(A, (first + last) / 2 + 1, last);
+			merge(A, first, last); 
 		}
 	}
 };
 
 template<typename Type>
-void Merge(Type *A, int first, int last)
+void merge(Type *A, int first, int last)
 {
 	int middle, start, final, j;
 	Type *mas = new Type[100];
@@ -41,7 +41,7 @@ void Merge(Type *A, int first, int last)
 	delete[]mas;
 };
 
-void Merge(char **A, int first, int last)
+void merge(char **A, int first, int last)
 {
 	int middle, start, final, j;
 	char **mas = new char*[100];
