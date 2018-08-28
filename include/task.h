@@ -46,7 +46,7 @@ template<> bool gen()
 template<typename T>
  T change(T a)
 {
-	return T + 2;
+	return a + 2;
 }
 
 
