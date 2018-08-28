@@ -1,5 +1,8 @@
 
-template<typename T> T gen();
+template<typename T> T gen()
+{
+	return 0;
+}
 template<> int gen()
 {
 	int res = rand() % 100;
@@ -39,12 +42,11 @@ template<> bool gen()
 }
 
 template<typename T>
-inline T change(T & a)
+ T change(T a)
 {
-	return T();
+	return T + 2;
 }
 
-template<typename T> T change(T);
 
 template<> int change(int a)
 {
