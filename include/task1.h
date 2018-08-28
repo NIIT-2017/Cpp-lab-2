@@ -64,4 +64,18 @@ void msort(Type *A, int first, int last)
 		}
 	}
 };
+
+template<typename Type>
+void msort(Type *A, int size)
+{
+	int first = 0, last = size;
+	{
+		if (first<last)
+		{
+			msort(A, first, (first + last) / 2);
+			msort(A, (first + last) / 2 + 1, last);
+			merge(A, first, last);
+		}
+	}
+};
 #endif
