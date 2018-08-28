@@ -1,7 +1,6 @@
 #ifndef _TASK3_H_
 #define _TASK3_H_
 
-#include"task.h"
 
 template<typename T, int n>
 void map(T(&arr)[n], T(*change)(T))
