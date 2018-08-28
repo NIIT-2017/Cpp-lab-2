@@ -2,6 +2,8 @@
 #define _TASK1_H_
 
 #include <iostream>
+#include <cstring>
+
 template<typename Type>
 void merge(Type *A, int first, int last)
 {
