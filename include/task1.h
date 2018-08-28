@@ -1,3 +1,6 @@
+#ifndef _TASK1_H_
+#define _TASK1_H_
+
 #include <iostream>
 template<typename Type>
 void merge(Type *A, int first, int last)
@@ -61,3 +64,4 @@ void msort(Type *A, int first, int last)
 		}
 	}
 };
+#endif
