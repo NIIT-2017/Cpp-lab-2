@@ -1,3 +1,5 @@
+#ifndef _TASK_H_
+#define _TASK_H_
 
 template<typename T> T gen()
 {
@@ -75,3 +77,4 @@ template<> char* change(char* a)
 		a[i] = a[i] + 2;
 	return a;
 }
+#endif
