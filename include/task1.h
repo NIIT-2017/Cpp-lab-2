@@ -70,7 +70,7 @@ void msort(Type *A, int first, int last)
 template<typename Type>
 void msort(Type *A, int size)
 {
-	int first = 0, last = size;
+	int first = 0, last = size - 1;
 	{
 		if (first<last)
 		{
