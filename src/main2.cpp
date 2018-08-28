@@ -11,17 +11,17 @@ int main()
 	int* arr;
 	int v = gen<int>();
 
-	int* arr1 = createArr <int>(n, gen);
+	int* arr1 = createArr <int, n>(gen);
 
-	double* arr2 = createArr <double>(n, gen);
+	double* arr2 = createArr <double, n>(gen);
 
-	float* arr3 = createArr <float>(n, gen);
+	float* arr3 = createArr <float, n>(gen);
 
-	char* arr4 = createArr <char>(n, gen);
+	char* arr4 = createArr <char, n>(gen);
 
-	char** arr5 = createArr <char *>(n, gen);
+	char** arr5 = createArr <char *, n>(gen);
 
-	bool* arr6 = createArr <bool>(n, gen);
+	bool* arr6 = createArr <bool, n>(gen);
 
 	for (int i = 0; i < n; i++)
 		cout << arr1[i] << " ";
