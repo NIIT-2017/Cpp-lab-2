@@ -1,12 +1,6 @@
 template <typename T>
 T* createArr(const int N, T(&gen)());
 template<typename T> T gen();
-template<> int gen();
-template<> float gen();
-template<> double gen();
-template<> char gen();
-template<> char* gen();
-template<> bool gen();
 
 template <typename T>
 T* createArr(const int N, T(&gen)())
