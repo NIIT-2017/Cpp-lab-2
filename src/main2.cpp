@@ -2,6 +2,7 @@
 #include"task2.h"
 #include <cstdlib>
 #include<time.h>
+#include"task.h"
 using namespace std;
 
 int main()
