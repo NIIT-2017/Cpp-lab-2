@@ -9,7 +9,6 @@ int main()
 	const int n = 5;
 	srand(time(0));
 	int* arr;
-	int v = gen<int>();
 
 	int* arr1 = createArr <int, n>(gen);
 
