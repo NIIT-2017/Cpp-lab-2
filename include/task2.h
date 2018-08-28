@@ -1,3 +1,4 @@
+#include"task.h"
 template <typename T>
 T* createArr(const int N, T(&gen)())
 {
