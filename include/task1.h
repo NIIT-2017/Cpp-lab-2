@@ -1,6 +1,8 @@
 #include <iostream>
 template<typename Type>
 void msort(Type *A, int first, int last);
+template<typename Type>
+void merge(Type *A, int first, int last);
 
 template<typename Type>
 void msort(Type *A, int first, int last)
