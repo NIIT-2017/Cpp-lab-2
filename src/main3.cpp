@@ -18,23 +18,23 @@ int main()
 			arr5[i][j] = 'a' + i;
 		arr5[i][i + 1] = '\0';
 	}
-	map<int>(arr1, n, change);
+	map<int, n>(arr1, change);
 	for (int i = 0; i < 6; i++)
 		cout << arr1[i] << " ";
 	cout << endl;
-	map<double>(arr2, n, change);
+	map<double, n>(arr2, change);
 	for (int i = 0; i < 6; i++)
 		cout << arr3[i] << " ";
 	cout << endl;
-	map<float>(arr3, n, change);
+	map<float, n>(arr3, change);
 	for (int i = 0; i < 6; i++)
 		cout << arr3[i] << " ";
 	cout << endl;
-	map<char>(arr4, n, change);
+	map<char, n>(arr4, change);
 	for (int i = 0; i < 6; i++)
 		cout << arr4[i] << " ";
 	cout << endl;
-	map<char *>(arr5, n, change);
+	map<char *, n>(arr5, change);
 	for (int i = 0; i < 6; i++)
 		cout << arr5[i] << " ";
 	cout << endl;
