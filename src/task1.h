@@ -1,3 +1,5 @@
+#ifndef _TASK1_H_
+#define _TASK1_H_
 #include <cstring>
 #include<cstddef>
 #include<iostream>
@@ -72,3 +74,4 @@ template <typename T> void msort(T* array, size_t sizeOfArr)
 	tempBuf = nullptr;
 
 }
+#endif

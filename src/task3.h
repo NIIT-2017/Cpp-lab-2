@@ -1,4 +1,5 @@
-
+#ifndef _TASK3_H_
+#define _TASK3_H_
 
 template <class T, size_t N> void map(T (&arr)[N], T(*change)(T)){
 	
@@ -11,17 +12,5 @@ template <class T, size_t N> void map(T (&arr)[N], T(*change)(T)){
 }
 
 
-template<class T> T change(T var) {
-	return var*var;
-}
-
-
-template<> char* change(char *var) {
-	for (int i = 0; i < strlen(var); i++) {
-		var[i] = rand()%('z'-'a'+1)+'a';
-	}
-	return var;
-}
-
-
+#endif
 
