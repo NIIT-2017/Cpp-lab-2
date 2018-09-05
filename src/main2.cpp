@@ -1,5 +1,6 @@
 #include<iostream>
 #include "task2.h"
+#include"task.h"
 #define N 10
 
 int main() {

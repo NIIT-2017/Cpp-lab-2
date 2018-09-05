@@ -2,6 +2,7 @@
 #include <iostream>
 #include<cstring>
 #include "task3.h"
+#include"task.h"
 
 int main() {
 	const size_t N = 9;
